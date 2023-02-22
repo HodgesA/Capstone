@@ -1,0 +1,44 @@
+<html><head>
+    <title>Create Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <ul class="topnav">
+      
+    
+        <li type="button"class="btn btn-default"><a href="Create.html">Create Account
+        </a></li>
+        <button  class="btn btn-default"><a href="Account.html"> Log in</a></button>
+        <button type="button" class="btn btn-default">cancel</button>
+      </ul>
+    <h3>Create your profile </h3>
+    <div class="login"> 
+   
+    <form action="create_profile.php" method="post">
+  <label> First Name: <input type="text" name="fname" required="required">
+     <br>Last Name: <input type="text" name="lname" required="required"></label> 
+  <label>
+      <br>Date of Birth <input type="date" id="dob" name="dob"></label>
+    <br>
+    
+   <label2> <input type="radio" name="gender" value="male"> Male<br></label2>
+   <label2><input type="radio" name="gender" value="female"> Female<br></label2>
+   <label2> <input type="radio" name="gender" value="other"> Other</label2>
+   <label> <br>Email: <input type="text" name="email" required="required"></label>
+  <label> <br>Username: <input type="text" name="usrname" required="required"></label> 
+  <label>   <br>Password: <input type="password" name="password" required="required"></label> 
+  <label>  <br>Re-enter Password: <input type="password" name="re_password" required="required"></label> 
+    <input type="submit" value="Submit">
+
+     <!-- FOOTER -->
+<footer>
+ 
+    <ul class="footer-right">    
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>       
+</footer>  
+
+</form></div></body></html>

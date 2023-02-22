@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Reccomendation Upcoming Movies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Index.html">Moviez</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="Index.html">Home</a></li>
+          <li><a href="Future.html">Coming Soon</a></li>
+          <li><a href="MyList.html">My List</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+      </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      
+    </nav>
+    
+    </body>
+    </html>    
+    <script>
+      var now = new Date(); // current date and time  
+      var hour = now.getHours(); // current hour (0-23)
+      if ( hour < 12 ) // determine whether it's morning
+      document.write( "<h4>Matinee Movie Time! " );
+          if ( hour >= 12 ) { // determine whether the time is PM  
+      hour = hour - 12; // convert to a 12-hour clock
+          if ( hour < 6 ) // determine whether it is before 6 PM  
+      document.write( "<h4>Matinee Movie Time! " );
+          if ( hour >= 6 ) // determine whether it is after 6 PM
+      document.write( "<h4>Movie Night! " );
+      } // end if
+      </script>
+    </div>
+    <style>
+      body {
+        padding: 0px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      </style>
+      </head>
+      <body>
+      
+      <button onclick="myFunction()">Toggle dark mode</button>
+      
+      <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+  </div>
+</nav>
+</head><body>     <div class="container-fluid">
+    <h1>Coming Soon!</h1>
+    <div class="container-fluid">
+    <div class="tutorial container text-center my-5 ratio ratio-16x9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/u3V5KDHRQvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="tutorial container text-center my-5 ratio ratio-16x9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5WfTEZJnv_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div></body></html>
+      </script>
+      <div class="container-fluid">
+        <h1>Coming Soon!</h1>
+        <div class="container-fluid">
+        <div class="tutorial container text-center my-5 ratio ratio-16x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u3V5KDHRQvk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="tutorial container text-center my-5 ratio ratio-16x9">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5WfTEZJnv_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Moviez</h1>      <script>
+        var now = new Date(); // current date and time  
+        var hour = now.getHours(); // current hour (0-23)
+        if ( hour < 12 ) // determine whether it's morning
+        document.write( "<h4>Matinee Movie Time! " );
+            if ( hour >= 12 ) { // determine whether the time is PM  
+        hour = hour - 12; // convert to a 12-hour clock
+            if ( hour < 6 ) // determine whether it is before 6 PM  
+        document.write( "<h4>Matinee Movie Time! " );
+            if ( hour >= 6 ) // determine whether it is after 6 PM
+        document.write( "<h4>Movie Night! " );
+        } // end if
+        </script>
+     <div id="sign"> 
+      
+        <a class='ab' href="sign_in.html">sign in</a> 
+
+
+    </nav>
+      
+         
+    </div>
+    <header>
+      <ul>
+        <li><a class="active" href="index.html">popular</a></li>
+        <li><a href="now_playing.html">now playing</a></li>
+        <li><a href="top_rated.html">top rated</a></li>
+        <li><a href="upcoming_movie.html">upcoming</a></li>
+        <li> <button onclick="myFunction()">Toggle dark mode</button>
+          <script>
+          function myFunction() {
+             var element = document.body;
+             element.classList.toggle("dark-mode");
+          }
+        </script></li>
+      </ul>
+    </script>
+        <div id="search_input">
+        <input id="search" type="text" placeholder="search movies" />
+        <button onClick="searchMovies()" id="btn-search">Search</button>
+      </div>
+    </header>
+    <section>
+      <div id="movies_now_playing" class="movie_list1"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
